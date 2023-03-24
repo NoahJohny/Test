@@ -9,7 +9,9 @@ let massEl = document.getElementById("mass-el");
 const meterToFeet = 3.281;
 const literToGallon = 0.264;
 const kiloToPound = 2.204;
-
+function inputEnter (e){
+  e.preventDefault();
+}
 convertBtn.addEventListener("click", function () {
   console.log("hello")
   let baseValue = inputEl.value;

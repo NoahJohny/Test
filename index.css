@@ -1,21 +1,38 @@
-body {
+* {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
+body {
+  background-color: whitesmoke;
+  align-items: center;
+}
+
 h2 {
-  font-weight: bold;
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+
+h3 {
+  font-size: 3vh;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 2vh;
+  font-weight: 600;
+  color: black;
 }
 
 ::placeholder {
   font-size: 10vh;
   line-height: 10vh;
-  color: black;
-  opacity: 0.3;
+  color: white;
+  opacity: 0.5;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 #input-section {
@@ -24,17 +41,62 @@ h2 {
   align-items: center;
   margin: auto;
 }
+#input-section > form {
+  display: flex;
+  flex-direction: column;
+}
 
 #input {
   margin: 30px;
-  width: 12vw;
+  width: 20vh;
   text-align: center;
-  font-size: 8vh;
+  font-size: 9vh;
+  font-weight: 700;
   line-height: 8vh;
   padding: 3vh 1vh;
-  font-family: "Poppins", sans-serif;
+  background-color: blueviolet;
+  border: 1px solid white;
+  border-radius: 1vh;
+  color: white;
+  outline: none;
 }
 
 #convert-btn {
-  padding: 10px 50px;
+  text-align: center;
+  font-weight: 500;
+  width: 20vh;
+  padding: 1vh 0;
+  margin-bottom: 3vh;
+  background-color: white;
+  border-radius: 1vh;
+  color: blueviolet;
+  outline: none;
+  border: none;
+}
+
+#input-wrapper {
+  height: fit-content;
+  padding: 3vh 0;
+  background-color: blueviolet;
+  color: white;
+}
+
+form {
+  align-items: center;
+}
+
+#convert-wrapper {
+  padding: 0 5vh;
+  align-items: center;
+}
+
+.section {
+  padding: 5vh 0;
+  background-color: white;
+  color: blueviolet;
+  margin: 5vh 0;
+}
+
+.section:hover {
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.1);
 }
